@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first web page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+        }
+        /* body{
+            background-color: black;
+        } */
+        #na{
+            height: 40px;
+            width: 100%;
+            background-color: white;
+            animation-name: wht;
+            animation-duration: 5s;
+            animation-timing-function: ease;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes wht{
+          from{
+            background-color: rgba(119, 198, 198, 0.7);
+          }
+          to{
+            background-color: hsla(328, 73%, 65%, 0.5);
+          }
+        }
+
+        #na a{
+            position: relative;
+            left: 74%;
+            top: 12px;
+            margin: 10px 34px 28px 28px;
+        }
+        nav{
+            height: 70px;
+            width: 100%;
+            background-color: rgb(111, 111, 242);
+            /* position: fixed; */
+            
+        }
+      
+
+        ul{
+            color: white;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 30px;
+        }
+        li{
+            margin-top: 20px;
+        }
+        input[type=text]{
+            height: 20px;
+            width: 230px;
+            margin: 3px 3px;
+            position: relative;
+            right: 10px;
+            border-radius: 5px;
+        }
+        td{
+            position: relative;
+            top: 10px;
+        }
+        .fa-solid{
+            position: relative;
+            right: 10px;
+        }
+
+        #f{
+            height: 10px;
+            color: blue;
+            font-weight: 200;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+            position: relative;
+            right: 11%;
+        }
+        #i{
+            height: 28px;
+            width: 500px;
+            background-color: rgb(rgb(136, 157, 177), green, blue);
+            border-radius: 10px;
+            position: relative;
+            right: 10%;
+        }
+        #be{
+            font-size: 20px;
+            position: relative;
+            right: 70px;
+        }
+        #ke{
+            font-size: 20px;
+            position: relative;
+            right: 40px;
+        }
+        #ca{
+            font-size: 20px;
+            position: relative;
+        }
+        #maindiv{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          position: relative;
+          top: 50px;
+        }
+        #cardone{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2024/04/26/14/19/airpods-8721977_1280.jpg);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+            
+        }
+        #cardone:hover{
+          transform: scale(1.1);
+        }
+        #cardtwo{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2014/04/05/11/41/earphone-316753_640.jpg);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+            
+        }
+        #cardtwo:hover{
+          transform: scale(1.1);
+        }
+        #cardthree{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2017/08/29/18/43/music-2694489_1280.jpg);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+            
+        }
+        #cardthree:hover{
+          transform: scale(1.1);
+        }
+        #cardfour{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2019/11/23/11/33/mobile-phone-4646854_640.jpg);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+            
+        }
+        #cardfour:hover{
+          transform: scale(1.1);
+        }
+        #cardfive{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2018/10/10/14/25/pants-3737416_640.jpg);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+            
+        }
+        #cardfive:hover{
+          transform: scale(1.1);
+        }
+
+        #maindiv1{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          position: relative;
+          top: 50px;
+        }
+        #cardsix{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2015/05/31/10/51/technology-791029_640.jpg);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+        }
+        #cardsix:hover{
+          transform: scale(1.1);
+        }
+        #cardseven{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2015/08/12/23/13/hand-886420_640.jpg);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+        }
+        #cardseven:hover{
+          transform: scale(1.1);
+        }
+        #cardeight{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2015/08/15/15/21/smart-watch-889639_640.jpg);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+        }
+        #cardeight:hover{
+          transform: scale(1.1);
+        }
+        #cardnine{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2016/12/26/16/09/bowl-1932375_640.jpg);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+        }
+        #cardnine:hover{
+          transform: scale(1.1);
+        }
+        #cardten{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2017/01/07/17/48/interior-1961070_640.jpg);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+        }
+        #cardten:hover{
+          transform: scale(1.1);
+        }
+        #big{
+          height: 300px;
+          width: 100%;
+          background-color: white;
+          background-image: url(https://cdn.pixabay.com/photo/2022/05/21/05/16/promotion-7210696_640.png),url(https://cdn.pixabay.com/photo/2022/05/21/05/16/promotion-7210696_640.png),url(https://cdn.pixabay.com/photo/2022/05/21/05/16/promotion-7210696_640.png);
+          background-repeat: no-repeat,no-repeat,no-repeat;
+          background-size: 400px 300px,400px 300px,400px 300px;
+          background-position: 50px,527px,1000px;
+          margin-top: 90px;
+        }
+
+        #big1{
+          height: 300px;
+          width: 100%;
+          background-color: white;
+          background-image: url(https://cdn.pixabay.com/photo/2013/07/13/10/05/real-estate-156502_640.png),url(https://cdn.pixabay.com/photo/2013/07/13/10/05/real-estate-156502_640.png),url(https://cdn.pixabay.com/photo/2013/07/13/10/05/real-estate-156502_640.png);
+          background-repeat: no-repeat,no-repeat,no-repeat;
+          background-size: 400px 300px,400px 300px,400px 300px;
+          background-position: 50px,527px,1000px;
+          margin-top: 20px;
+        }
+        #maindiv2{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+        #card11{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2022/07/24/19/42/bike-7342379_640.png);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+        }
+        #card11:hover{
+          transform: scale(1.1);
+        }
+         #card11:hover{
+          transform: scale(1.1);
+        } 
+        
+        #card12{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2016/11/06/05/33/miniature-1802333_640.jpg);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+        }
+        #card12:hover{
+          transform: scale(1.1);
+        }
+        #card13{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2017/12/13/00/23/christmas-3015776_640.jpg);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+            position: relative;
+        }
+        #card13:hover{
+          transform: scale(1.1);
+        }
+        #card14{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2020/04/07/06/05/macro-5012180_640.jpg);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+        }
+        #card14:hover{
+          transform: scale(1.1);
+        }
+        #card15{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2014/12/30/11/55/office-583839_640.jpg);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+        }
+        #card15:hover{
+          transform: scale(1.1);
+        }
+
+        #maindiv3{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          position: relative;
+          top: 18px;
+        }
+        #card16{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2017/11/02/14/07/coffee-beans-2911291_640.jpg);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+            position: relative;
+            margin-top: 10px;
+        }
+        #card16:hover{
+          transform: scale(1.1);
+        }
+        #card17{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2022/11/01/05/18/coffee-7561288_640.jpg);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+            margin-top: 10px;
+        }
+        #card17:hover{
+          transform: scale(1.1);
+        }
+        #card18{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2016/09/03/14/45/smartphone-1641906_640.jpg);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+            margin-top: 10px;
+        }
+        #card18:hover{
+          transform: scale(1.1);
+        }
+        #card19{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2016/07/14/11/11/printer-1516578_640.jpg);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+            margin-top: 10px;
+        }
+        #card19:hover{
+          transform: scale(1.1);
+        }
+        #card20{
+            height: 28vh;
+            width: 15vw;
+            /* border: 5px solid blue; */
+            background-image: url(https://cdn.pixabay.com/photo/2016/12/10/16/57/shoes-1897708_640.jpg);
+            background-repeat: no-repeat;
+            background-size: 15vw 20vh;
+            box-shadow: 10px 10px 10px black;
+            margin-top: 10px;
+        }
+        #card20:hover{
+          transform: scale(1.1);
+        }
+
+
+
+        #tab{
+            height: 150px;
+            width: 100%;
+            color: antiquewhite;
+            background-color: black;
+            position: relative;
+            top: 6px;
+        }
+        .pos{
+            position: relative;
+            top: 143px;
+            left: 4px;
+            color:rgb(49, 30, 30);
+        }
+        #scre{
+          height: 500px;
+          width: 100%;
+          background-image: url(https://img.freepik.com/free-photo/person-using-tablet_53876-163995.jpg?t=st=1719903664~exp=1719907264~hmac=4d22bdb2225d3900c4721678fd07a46887418347ef347f72940b871acd378598&w=900);
+          background-repeat: no-repeat;
+          position: relative;
+          left: 21%;
+        }
+        #newtab{
+          height: 40px;
+          width: 100%;
+          background-color: black;
+          position: relative;
+          bottom: 10px;
+        }
+        #footer{
+          color: #efecf4;
+          position: relative;
+          bottom: 10px;
+        }
+        #get{
+          position: relative;
+          left: 98px;
+        }
+        .low{
+          position: relative;
+          top: 60px;
+          
+        }
+
+        
+    </style>
+</head>
+<body>
+  <nav id="na">
+    <a href="https://www.youtube.com/" target="_blank">
+        <i class="fa-brands fa-youtube fa-2xl" style="color: #e50606;"></i>
+    </a>
+    <a href="https://www.facebook.com/" target="_blank">
+        <i class="fa-brands fa-facebook fa-2xl" style="color: #1d2f8c;"></i>
+    </a>
+    <a href="https://in.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank">
+        <i class="fa-brands fa-linkedin fa-2xl" style="color: #184faf;"></i>
+    </a>
+    <a href="https://www.whatsapp.com/" target="_blank">
+        <i class="fa-brands fa-whatsapp fa-2xl" style="color: #1da413;"></i>
+    </a>
+</nav>
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-shop fa-xl" style="color: #edf7f5;"></i>Shopping</li>
+            <table>
+                <tr><td><input type="text"id="td" placeholder="search here">Search for new products</td></tr>
+            </table>
+            <li>Become a seller</li>
+            <li><i class="fa-solid fa-circle-user" style="color: #d9dbde;"></i>Sign In</li>
+            <li><i class="fa-solid fa-cart-shopping fa-xl" style="color: #efecf4;"></i>cart</li>
+        </ul>
+    </nav>
+
+    <!-- <h1 id="low" class="low">At lowest prices</h1>
+    <h1 id="bes" class="low">best quality products</h1> -->
+
+
+    <h1 id="maindiv">
+        <div id="cardone">
+          <h6 class="pos">airdopes at lowest prices. </h6>
+        </div>
+        <div id="cardtwo">
+          <h6 class="pos">earphones at affordable prices.</h6>
+        </div>
+        <div id="cardthree">
+          <h6 class="pos">quality based headphones</h6>
+        </div>
+        <div id="cardfour">
+            <h6 class="pos">quality based mobilephones</h6>
+        </div>
+        <div id="cardfive">
+            <h6 class="pos">jeans pants for men</h6>
+        </div>
+      </div>
+    </h1>
+    <br>
+    <br>
+
+    <h1 id="maindiv1">
+        <div id="cardsix">
+            <h6 class="pos">laptop accessories</h6>
+        </div>
+        <div id="cardseven">
+            <h6 class="pos">quality shirts for men</h6>
+        </div>
+        <div id="cardeight">
+            <h6 class="pos">smartwatches at lowest prices</h6>
+        </div>
+        <div id="cardnine">
+            <h6 class="pos">ice creams for children</h6>
+        </div>
+        <div id="cardten">
+            <h6 class="pos">home appliances</h6>
+        </div>
+      </div>
+    </h1>
+
+    <h2 id="big"></h2>
+    <h2 id="big1"></h2>
+    <br>
+    <br>
+
+    <h1 id="maindiv2">
+      <div id="card11">
+        <h6 class="pos">Modern bicycles for new generation. </h6>
+      </div>
+      <div id="card12">
+        <h6 class="pos">car toys for children.</h6>
+      </div>
+      <div id="card13">
+        <h6 class="pos">amazing gifts for special persons</h6>
+      </div>
+      <div id="card14">
+          <h6 class="pos">modern airdopes for new generation</h6>
+      </div>
+      <div id="card15">
+          <h6 class="pos">Laptops and ipads</h6>
+      </div>
+    </div>
+  </h1>
+      <br>
+
+      <h1 id="maindiv3">
+        <div id="card16">
+          <h6 class="pos">prepare coffee with these coffe powders</h6>
+        </div>
+        <div id="card17">
+          <h6 class="pos">cofee or tee glasses</h6>
+        </div>
+        <div id="card18">
+          <h6 class="pos">mobile chargers & switching sachets</h6>
+        </div>
+        <div id="card19">
+            <h6 class="pos">quality based printers</h6>
+        </div>
+        <div id="card20">
+            <h6 class="pos">trendy shows for men</h6>
+        </div>
+      </div>
+    </h1>
+    <br>
+    <br>
+
+      <h6 id="scre"></h6>
+
+
+    <br>
+    <table id="tab">
+        <tr>
+          <th>About</th>
+          <th>Help</th>
+          <th>Consumer Policy</th>
+          <th>Social</th>
+          <th>Mail us</th>
+          <th>Office Address</th>
+        </tr>
+        <tr>
+          <td>Contact Us</td>
+          <td>Payments</td>
+          <td>Cancellation</td>
+          <td>Facebook</td>
+          <td>flipkart internet private limited</td>
+          <td>flipkart internet private limited</td>
+        </tr>
+        <tr>
+          <td>about us</td>
+          <td>shipping</td>
+          <td>terms of use</td>
+          <td>twitter</td>
+          <td>Building Alassia</td>
+          <td>Building Alassia</td>
+        </tr>
+        <tr>
+          <td>careers</td>
+          <td>cancellation and returns</td>
+          <td>security</td>
+          <td>youtube</td>
+          <td>clone embassy tech village</td>
+          <td>clone embassy tech village</td>
+        </tr>
+</table>
+<br>
+
+<div>
+  <table id="newtab">
+    <tr id="footer">
+      <td id="get"><i class="fa-solid fa-store" style="color: #33e6b9;"></i>Get notifications on new products</td>
+      <td><i class="fa-solid fa-rectangle-ad" style="color: #37aebe;"></i>Advertisre</td>
+      <td><i class="fa-solid fa-gift" style="color: #34bcba;"></i>Gift cards</td>
+      <td><i class="fa-solid fa-house-signal" style="color: #27b1b4;"></i>Help center</td>
+      <td>c@ 2012-2023 shopee.com</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
